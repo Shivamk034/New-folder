@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: antiquewhite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            background-color: black;
+            height: 800px;
+            width: 600px;
+            display: grid;
+            grid-template-columns: 240px auto;
+            grid-template-rows: 440px auto;
+            gap: 20px;
+        }
+        
+        .first-block{
+            display: grid;
+            grid-template-rows: 120px auto;
+            gap: 20px;
+        }
+        .first-block-1{
+            background-color: #E72F24;
+        }
+        .first-block-2{
+            background-color: #004592;
+        }
+
+        .second-block{
+            display: grid;
+            grid-template-columns: 150px auto;
+            grid-template-rows: 300px auto;
+            gap: 20px;
+        }
+        .second-block-1{
+            display: grid;
+            grid-template-rows: 120px auto;
+        }
+        .second-block-1-first{
+            background-color: white;
+        }
+        .second-block-2{
+            display: grid;
+            grid-template-rows: 45px auto;
+            gap: 10px;
+        }
+        .second-block-2-first{
+            background-color: white;
+        }
+        .second-block-2-second{
+            background-color: #F9D01E;
+        }
+        .second-block-4{
+            background-color: white;
+        }
+
+        .third-block{
+            display: grid;
+            grid-template-rows: 50px auto;
+            gap: 20px;
+        }
+        .third-block-1{
+            background-color: white;
+        }
+        .third-block-2{
+            background-color: white;
+        }
+
+        .fourth-block{
+            display: grid;
+            grid-template-rows: 190px auto;
+            gap: 20px;
+        }
+        .fourth-block-1{
+            display: grid;
+            grid-template-columns: 150px auto;
+            gap: 20px;
+        }
+        .fourth-block-1-first{
+            background-color: #E72F24;
+        }
+        .fourth-block-1-second{
+            background-color: #E72F24;
+        }
+        .fourth-block-2{
+            display: grid;
+            grid-template-columns: 260px auto;
+            gap: 20px;
+        }
+        .fourth-block-2-first{
+            background-color: #004592;
+        }
+        .fourth-block-2-second{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first-block">
+            <div class="first-block-1"></div>
+            <div class="first-block-2"></div>
+        </div>
+
+        <div class="second-block">
+            <div class="second-block-1">
+                <div class="second-block-1-first"></div>
+            </div>
+
+            <div class="second-block-2">
+                <div class="second-block-2-first"></div>
+                <div class="second-block-2-second"></div>
+            </div>
+            <div class="second-block-3"></div>
+            <div class="second-block-4"></div>
+        </div>
+
+        <div class="third-block">
+            <div class="third-block-1"></div>
+            <div class="third-block-2"></div>
+        </div>
+
+        <div class="fourth-block">
+            <div class="fourth-block-1">
+                <div class="fourth-block-1-first"></div>
+                <div class="fourth-block-1-second"></div>
+            </div>
+            <div class="fourth-block-2">
+                <div class="fourth-block-2-first"></div>
+                <div class="fourth-block-2-second"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

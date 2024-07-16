@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container{
+            background-color: black;
+            height: 800px;
+            width: 650px;
+            display: grid;
+            grid-template-columns: 500px auto;
+            grid-template-rows: 50px auto;
+            gap: 20px;
+
+            .first-block{
+                /* background-color: white; */
+                display: grid;
+                grid-template-columns: 180px auto;
+                gap: 20px;
+
+                .first-block-1{
+                    background-color: white;
+                }
+
+                .first-block-2{
+                    background-color: white;
+                }
+            }
+
+            .second-block{
+                background-color: #F9D01E;
+            }
+
+            .third-block{
+                display: grid;
+                grid-template-columns: 40px auto;
+                gap: 20px;
+
+                .third-block-1{
+                    display: grid;
+                    grid-template-rows: 200px 350px auto;
+                    gap: 20px;
+
+                    .third-block-1-first{
+                        background-color: white;
+                    }
+
+                    .third-block-1-second{
+                        background-color: white;
+                    }
+
+                    .third-block-1-third{
+                        background-color: #F9D01E;
+                    }
+                }
+
+                .third-block-2{
+                    display: grid;
+                    grid-template-rows: 440px auto;
+                    gap: 20px;
+                    .third-block-2-first{
+                        background-color: #E72F24;
+                    }
+
+                    .third-block-2-second{
+                        display: grid;
+                        grid-template-columns: 220px auto;
+                        gap: 20px;
+
+                        .third-block-2-second-1{
+                            display: grid;
+                            grid-template-rows: 230px auto;
+
+                            .third-block-2-second-1-first{
+                                background-color: black;
+                            }
+
+                            .third-block-2-second-1-second{
+                                background-color: white;
+                            }
+                        }
+                        .third-block-2-second-2{
+                            display: grid;
+                            grid-template-rows: 100px 100px auto;
+                            gap: 20px;
+
+                            .third-block-2-second-2-first{
+                                background-color: white;
+                            }
+                            .third-block-2-second-2-second{
+                                background-color: white;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .fourth-block{
+                    display: grid;
+                    grid-template-rows: 200px 220px 100px auto;
+                    gap: 20px;
+
+                    .fourth-block-1{
+                        background-color: #F9D01E;
+                    }
+                    .fourth-block-2{
+                        background-color: white;
+                    }
+                    .fourth-block-3{
+                        background-color: white;
+                    }
+                    .fourth-block-4{
+                        background-color: #004592;
+                    }
+                }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first-block">
+            <div class="first-block-1"></div>
+            <div class="first-block-2"></div>
+        </div>
+
+        <div class="second-block"></div>
+
+        <div class="third-block">
+            <div class="third-block-1">
+                <div class="third-block-1-first"></div>
+                <div class="third-block-1-second"></div>
+                <div class="third-block-1-third"></div>
+            </div>
+            <div class="third-block-2">
+                <div class="third-block-2-first"></div>
+
+                <div class="third-block-2-second">
+                    <div class="third-block-2-second-1">
+                        <div class="third-block-2-second-1-first"></div>
+                        <div class="third-block-2-second-1-second"></div>
+                    </div>
+                    <div class="third-block-2-second-2">
+                        <div class="third-block-2-second-2-first"></div>
+                        <div class="third-block-2-second-2-second"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fourth-block">
+            <div class="fourth-block-1"></div>
+            <div class="fourth-block-2"></div>
+            <div class="fourth-block-3"></div>
+            <div class="fourth-block-4"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: antiquewhite;
+        }
+
+        .gap{
+            background-color: black;
+        }
+
+        .container{
+            background-color: black;
+            height: 800px;
+            width: 700px;
+            display: grid;
+            grid-template-columns: 350px auto;
+            grid-template-rows: 400px auto;
+
+            .first-block {
+                background-color: #004592;
+            }
+
+            .second-block {
+                display: grid;
+                grid-template-columns: 15px auto;
+
+                .second-block-1 {
+                    display: grid;
+                    grid-template-rows: 90px 150px auto;
+                    gap: 15px;
+
+                    .second-block-1-first {
+                        background-color: red;
+                    }
+
+                    .second-block-1-second {
+                        background-color: #004592;
+                    }
+
+                    .second-block-1-third {
+                        display: grid;
+                        grid-template-columns: 102.5px 102.5px auto;
+                        gap: 15px;
+
+                        .second-block-1-third-1 {
+                            background-color: #F9D01E;
+                        }
+
+                        .second-block-1-third-2 {
+                            background-color: #F9D01E;
+                        }
+
+                        .second-block-1-third-3 {
+                            background-color: #E72F24;
+                        }
+                    }
+                }
+            }
+
+            .third-block {
+                /* background-color: white; */
+                display: grid;
+                grid-template-rows: 15px 280px 15px auto;
+
+                .third-block-1 {
+                    background-color: white;
+                }
+
+                .third-block-2 {
+                    background-color: #E72F24;
+                }
+            }
+
+            .fourth-block{
+                /* background-color: #E72F24; */
+                display: grid;
+                grid-template-columns: 235px auto;
+                gap: 15px;
+
+                .fourth-block-1{
+                    display: grid;
+                    grid-template-rows: 15px 280px 15px auto;
+
+                    .fourth-block-1-first {
+                        background-color: white;
+                    }
+
+                    .fourth-block-1-second {
+                        background-color: #E72F24;
+                    }
+                }
+
+                .fourth-block-2{
+                    background-color: #E72F24;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first-block"></div>
+
+        <div class="second-block">
+            <div class="gap"></div>
+
+            <div class="second-block-1">
+                <div class="second-block-1-first"></div>
+                <div class="second-block-1-second"></div>
+                <div class="second-block-1-third">
+                    <div class="second-block-1-third-1"></div>
+                    <div class="second-block-1-third-2"></div>
+                    <div class="second-block-1-third-3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="third-block">
+            <div class="gap"></div>
+
+            <div class="third-block-1"></div>
+
+            <div class="gap"></div>
+
+            <div class="third-block-2"></div>
+        </div>
+
+
+        <div class="fourth-block">
+            <div class="fourth-block-1">
+                <div class="gap"></div>
+                
+                <div class="fourth-block-1-first"></div>
+
+                <div class="gap"></div>
+
+                <div class="fourth-block-1-second"></div>
+            </div>
+            <div class="fourth-block-2"></div>
+        </div>
+    </div>
+</body>
+</html>
